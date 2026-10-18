@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTTP requests, responses, common methods, status codes and HTTPS.">
+  <title>How HTTP Works | HTTP Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared header and navigation appear on every page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">HTTP Explained</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-http-works.html" aria-current="page">How HTTP Works</a></li>
+          <li><a href="http-evolution.html">Evolution</a></li>
+          <li><a href="key-concepts.html">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page-specific content begins here. -->
+  <main id="main-content" class="container">
+<h1>How HTTP Works</h1>
+    <p class="page-intro">HTTP (Hypertext Transfer Protocol) defines how clients, such as browsers,
+      send requests and how servers return responses.</p>
+
+    <section class="content-section">
+      <h2>1. The Request-Response Process</h2>
+      <p>When you open a webpage, the browser asks a server for resources such as HTML, images, and CSS files.</p>
+      <figure>
+        <img src="images/http-process.png" width="1200" height="420"
+          alt="A browser sends an HTTP request to a web server, and the server sends an HTTP response back.">
+        <figcaption>Figure 1. Basic HTTP communication between a browser and server.</figcaption>
+      </figure>
+      <ol class="step-list">
+        <li>The user enters a URL or clicks a link.</li>
+        <li>The browser sends an HTTP request to the server.</li>
+        <li>The server processes the request.</li>
+        <li>The server returns an HTTP response.</li>
+        <li>The browser uses the response to display the page.</li>
+      </ol>
+    </section>
+
+    <section class="content-section">
+      <h2>2. Common HTTP Methods</h2>
+      <p>An HTTP method tells the server what action the client wants to perform.</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Method</th><th scope="col">Purpose</th><th scope="col">Example</th></tr></thead>
+          <tbody>
+            <tr><td>GET</td><td>Retrieve a resource</td><td>View a product page</td></tr>
+            <tr><td>POST</td><td>Submit data for processing</td><td>Submit an order</td></tr>
+            <tr><td>PUT</td><td>Replace a resource</td><td>Replace a profile record</td></tr>
+            <tr><td>DELETE</td><td>Remove a resource</td><td>Delete a saved item</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>3. Common Response Status Codes</h2>
+      <ul class="simple-list">
+        <li><strong>200 OK:</strong> The request succeeded.</li>
+        <li><strong>301 Moved Permanently:</strong> The resource has a new permanent address.</li>
+        <li><strong>404 Not Found:</strong> The requested resource was not found.</li>
+        <li><strong>500 Internal Server Error:</strong> The server encountered an error.</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>4. Statelessness and HTTPS</h2>
+      <p><strong>Statelessness:</strong> HTTP treats each request as an independent interaction.
+        Cookies and sessions can help a website remember a user across requests.</p>
+      <p><strong>HTTPS:</strong> HTTPS uses TLS to protect HTTP communication with encryption,
+        integrity protection, and server authentication.</p>
+    </section>
+  </main>
+
+  <!-- Course acknowledgment required by Milestone 1. -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created as a class project for
+        <a href="https://ksuweb.github.io/IT3203/">IT 3203 Web Development</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

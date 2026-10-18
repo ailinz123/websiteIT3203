@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A concise history of HTTP versions from HTTP/0.9 to HTTP/3.">
+  <title>HTTP Evolution | HTTP Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared header and navigation appear on every page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">HTTP Explained</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-http-works.html">How HTTP Works</a></li>
+          <li><a href="http-evolution.html" aria-current="page">Evolution</a></li>
+          <li><a href="key-concepts.html">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page-specific content begins here. -->
+  <main id="main-content" class="container">
+<h1>The Evolution of HTTP</h1>
+    <p class="page-intro">As websites became more complex, HTTP developed new features to
+      support richer content and more efficient communication.</p>
+
+    <section class="content-section">
+      <h2>Major HTTP Versions</h2>
+      <figure>
+        <img src="images/http-timeline.png" width="1200" height="310"
+          alt="Timeline showing HTTP/0.9, HTTP/1.0, HTTP/1.1, HTTP/2, and HTTP/3 in order.">
+        <figcaption>Figure 2. The major stages in HTTP development.</figcaption>
+      </figure>
+
+      <div class="version-list">
+        <article class="version">
+          <h3>HTTP/0.9 - The Beginning</h3>
+          <p>The earliest HTTP was designed to retrieve simple hypertext documents.
+            It used basic GET requests and returned very little extra information.</p>
+        </article>
+        <article class="version">
+          <h3>HTTP/1.0 - Richer Messages</h3>
+          <p>HTTP/1.0 introduced headers, status codes, and support for different content types.
+            Communication became more informative, although connections were still inefficient.</p>
+        </article>
+        <article class="version">
+          <h3>HTTP/1.1 - Persistent Connections</h3>
+          <p>HTTP/1.1 made it possible to reuse connections for multiple requests.
+            It also improved support for virtual hosting and caching.</p>
+        </article>
+        <article class="version">
+          <h3>HTTP/2 - Multiplexing</h3>
+          <p>HTTP/2 uses binary framing, multiplexing, and header compression.
+            Multiple streams can share one TCP connection more efficiently.</p>
+        </article>
+        <article class="version">
+          <h3>HTTP/3 - QUIC Transport</h3>
+          <p>HTTP/3 uses QUIC over UDP instead of TCP.
+            QUIC supports independent streams and can reduce delays caused by packet loss.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Comparing Modern HTTP Versions</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th scope="col">Version</th><th scope="col">Transport</th><th scope="col">Main Improvement</th></tr></thead>
+          <tbody>
+            <tr><td>HTTP/1.1</td><td>TCP</td><td>Persistent connections</td></tr>
+            <tr><td>HTTP/2</td><td>TCP</td><td>Multiplexing and header compression</td></tr>
+            <tr><td>HTTP/3</td><td>QUIC over UDP</td><td>Independent streams and improved transport</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The core request-response model remains important across HTTP versions.</p>
+    </section>
+  </main>
+
+  <!-- Course acknowledgment required by Milestone 1. -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created as a class project for
+        <a href="https://ksuweb.github.io/IT3203/">IT 3203 Web Development</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

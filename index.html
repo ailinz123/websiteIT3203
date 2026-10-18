@@ -1,65 +1,95 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
     <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <title>
-            My IT3203 Website
-        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Home | HTTP Explained</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <h1>
-            Hello! This is my first website.
-        </h1>
+        <!-- Website header-->
+         <header class="site-header">
+            <div class="container header-inner">
+                <a class="brand" href="index.html">
+                    HTTP Explained
+                </a>
 
-        <ol>
-            <li>Data analytics
-                <ul>
-                    <li>SQL</li>
-                    <li>Power BI</li>
-                </ul>
-            </li>
+                <!-- Main navigation -->
+                 <nav aria-lable="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="how-http-works.html">How HTTP Works</a></li>
+                        <li><a href="http-evolution.html">Evolution</a></li>
+                        <li><a href="key-concepts.html">Key Concepts</a></li>
+                        <li><a href="references.html">References</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
 
-            <li>Web development
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-            </li>
-        </ol>
-
-        <a herf = "https://google.com">
-            Search Google
-        </a><br>
-        <a herf = "https://google.com" target = "_blank">
-            Search Google
-        </a>
-
-        <table>
-            <tr>
-                <th>Store</th>
-                <th>Sales</th>
-            </tr>
-            <tr>
-                <td>Beijing</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>Shanghai</td>
-                <td>98</td>
-            </tr>
-        </table>
-
-
-        <header>
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
+            </div>
         </header>
+
+        <!-- Main content of this page -->
+         <main id="main-content" class="container">
+            <section class="hero">
+                <p class="eyebrow">A beginner-friendly web technology guide</p>
+                <h1>The Evolution of HTTP</h1>
+                <p class="hero-lead">From HTTP/0.9 to HTTP/3</p>
+                <p>HTTP is a communication protocol that allows browsers and servers to exchange information.
+                   This website introduces how HTTP works, why it matters, and how it has changed as the Web has grown.
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2>Table of Contents</h2>
+                <div class="card-grid">
+                    <article class="card">
+                        <h3><a href="how-http-works.html">1. How HTTP Works</a>
+                        </h3>
+                        <p>Follow a request from the browser to the server and back.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3><a href="http-evolution.html">2. HTTP Evolution</a></h3>
+                        <p>Explore the main improvements from HTTP/0.9 to HTTP/3.</p>
+                    </article>
+                    <article class="card">
+                        <h3><a href="key-concepts.html">3. Key Concepts</a></h3>
+                        <p>Review seven important terms used throughout the site.</p>
+                    </article>
+                    <article class="card">
+                        <h3><a href="references.html">4. References</a></h3>
+                        <p>Find research references and reliable learning resources.</p>
+                    </article>
+                    <article class="card">
+                        <h3><a href="about.html">5. About</a></h3>
+                        <p>Learn about the author and the IT 3203 course project.</p>
+                    </article>
+                </div>
+            </section>
+         </main>
+
+
         
-    
-    
-    
+
+        <!-- website footer-->
+        <footer class="site-footer">
+            <div class="container">
+                <p>
+                    This website is a class project for
+                    <a href="http://ksuweb.github.io/IT3203">
+                        IT3203 Web Development
+                    </a>
+                </p>
+            </div>
+        </footer>
+
+
     </body>
+
 </html>
+
+
+

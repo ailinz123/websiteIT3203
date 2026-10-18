@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seven beginner-friendly HTTP technology concepts.">
+  <title>Key Concepts | HTTP Explained</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Shared header and navigation appear on every page. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">HTTP Explained</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-http-works.html">How HTTP Works</a></li>
+          <li><a href="http-evolution.html">Evolution</a></li>
+          <li><a href="key-concepts.html" aria-current="page">Key Concepts</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page-specific content begins here. -->
+  <main id="main-content" class="container">
+<h1>Key HTTP Concepts</h1>
+    <p class="page-intro">These seven terms help explain how HTTP works and why its newer versions matter.</p>
+
+    <!-- Description lists are designed for terms and their definitions. -->
+    <dl class="concept-grid">
+      <div class="concept">
+        <dt>1. HTTP Request</dt>
+        <dd>A message a client sends to a server to ask for a resource or action.
+          For example, a browser may request <code>/index.html</code>.</dd>
+      </div>
+      <div class="concept">
+        <dt>2. HTTP Response</dt>
+        <dd>The message a server returns after receiving a request.
+          It can include a status code, headers, and content.</dd>
+      </div>
+      <div class="concept">
+        <dt>3. HTTP Method</dt>
+        <dd>A word describing the action requested by the client.
+          Common examples include GET, POST, PUT, and DELETE.</dd>
+      </div>
+      <div class="concept">
+        <dt>4. Status Code</dt>
+        <dd>A three-digit number indicating the result of an HTTP request.
+          For example, 200 means success and 404 means not found.</dd>
+      </div>
+      <div class="concept">
+        <dt>5. HTTP Header</dt>
+        <dd>Additional information included in a request or response.
+          For example, <code>Content-Type</code> identifies the type of content.</dd>
+      </div>
+      <div class="concept">
+        <dt>6. Multiplexing</dt>
+        <dd>A technique used by HTTP/2 and HTTP/3 to let multiple streams
+          share a connection efficiently.</dd>
+      </div>
+      <div class="concept">
+        <dt>7. QUIC</dt>
+        <dd>A secure transport protocol built over UDP. HTTP/3 uses QUIC
+          to support independent streams and efficient connection management.</dd>
+      </div>
+    </dl>
+  </main>
+
+  <!-- Course acknowledgment required by Milestone 1. -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Created as a class project for
+        <a href="https://ksuweb.github.io/IT3203/">IT 3203 Web Development</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
