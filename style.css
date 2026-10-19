@@ -1,108 +1,188 @@
-* { box-sizing: border-box; }
+
+/* General styles */
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 16px;
   line-height: 1.6;
-  color: #333;
+  color: black;
+  background: #f7f7f7;
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-h1, h2, h3 { color: #23476a; }
-a { color: #245b8a; }
-a:hover { color: #123854; }
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: inherit;
+}
 
 /* Header and navigation */
-.site-header { background: #f2f5f8; border-bottom: 1px solid #ccc; }
+.site-header {
+  background: #f0e1e5;
+}
 
 .header-inner {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-.brand { padding: 15px 0; font-size: 20px; font-weight: bold; text-decoration: none; }
+.brand {
+  padding: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.nav-list a { display: block; padding: 12px 8px; text-decoration: none; }
-.nav-list a:hover { background: #dce6ef; }
+.nav-list a {
+  display: block;
+  padding: 10px 13px;
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  background: #dfcbd1;
+}
 
 /* Main content */
-#main-content { padding-top: 30px; padding-bottom: 50px; }
-.content-section { margin-top: 30px; }
-.hero {
-  padding: 25px;
-  background: #896F78;
-  color: white;
-  border: 1px solid #896F78;
+#main-content {
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 
-.hero h1 {
-  color: white;
+.hero, .content-section {
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
 }
-.hero-lead { font-weight: bold; }
+.content-section {
+  background: white;
+}  
+
+.hero {
+  background: #eee;
+  color: #725760;
+}
+
+.toc-section {
+  border: none;
+  padding: 0;
+}
 
 .term-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  list-style: none;
   padding: 0;
+  list-style: none;
 }
-.term-list li { padding: 6px 12px; border: 1px solid #ccc; }
 
-/* Home and Key Concepts cards */
+.term-list li {
+  padding: 5px 12px;
+  background: #f0e1e5;
+}
+
+/* Cards */
 .card-grid, .concept-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
-.card, .concept { padding: 18px; border: 1px solid #ccc; }
-.concept dt { font-weight: bold; }
-.concept dd { margin: 0; }
+
+.card, .concept {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.concept dt {
+  font-weight: bold;
+}
+
+.concept dd {
+  margin: 0;
+}
 
 /* Images and tables */
-figure { margin: 20px 0; }
-figure img { display: block; max-width: 100%; height: auto; }
-figcaption { margin-top: 8px; font-size: 14px; color: #666; }
-.table-scroll { overflow-x: auto; }
-table { width: 100%; border-collapse: collapse; }
-th, td { padding: 10px; border: 1px solid #ccc; text-align: left; }
-th { background: #f2f5f8; }
+figure {
+  margin: 20px 0;
+}
 
-/* Image and explanation on How HTTP Works page */
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* HTTP process layout */
 .process-layout {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
 }
-.process-figure { width: 40%; flex-shrink: 0; margin: 0; }
-.process-figure img { width: 100%; }
 
-/* HTTP Evolution page */
-.version { border-left: 3px solid #245b8a; padding-left: 15px; margin: 20px 0; }
+.process-figure {
+  width: 40%;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.process-figure img {
+  width: 100%;
+}
 
 /* Footer */
 .site-footer {
-  padding: 20px 0;
-  background: #f2f5f8;
-  border-top: 1px solid #ccc;
+  padding: 15px;
   text-align: center;
 }
 
 /* Smaller screens */
 @media (max-width: 800px) {
-  .process-layout { flex-direction: column; align-items: stretch; }
-  .process-figure { width: 100%; max-width: 500px; margin: 0 auto; }
-  .card-grid, .concept-grid { grid-template-columns: 1fr; }
+  .card-grid, .concept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-layout {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .process-figure {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
