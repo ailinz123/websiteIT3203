@@ -79,23 +79,6 @@ a {
   color: #725760;
 }
 
-.toc-section {
-  border: none;
-  padding: 0;
-}
-
-.term-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 0;
-  list-style: none;
-}
-
-.term-list li {
-  padding: 5px 12px;
-  background: #f0e1e5;
-}
 
 /* Cards */
 .card-grid, .concept-grid {
@@ -144,23 +127,6 @@ th, td {
   padding: 10px;
   border: 1px solid #ccc;
   text-align: left;
-}
-
-/* HTTP process layout */
-.process-layout {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.process-figure {
-  width: 40%;
-  flex-shrink: 0;
-  margin: 0;
-}
-
-.process-figure img {
-  width: 100%;
 }
 
 /* Footer */
